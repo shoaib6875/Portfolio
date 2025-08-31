@@ -147,7 +147,7 @@ function App() {
       <Navbar ref={navbarRef} isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <section id="intro" className="min-h-screen flex items-center justify-center relative overflow-hidden" style={{
         paddingTop: `${navbarHeight}px`,
-        backgroundImage: `url(${isDarkMode ? '/dark.png' : '/bglight.png'})`,
+        backgroundImage: `url(${isDarkMode ? `${import.meta.env.BASE_URL}dark.png` : `${import.meta.env.BASE_URL}bglight.png`})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>

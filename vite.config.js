@@ -4,13 +4,12 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Portfolio',
+  base: '/Portfolio/', // Required for GitHub Pages
   server: {
-    host: true,        // 👈 allow access from network
-    port: 5173,        // (optional) force a fixed port
-  }
+    host: true,
+    port: 5173,
+  },
 })
-
 
 
 // import { defineConfig } from 'vite'

@@ -17,9 +17,9 @@ function App() {
   useEffect(() => {
     // Typing animation
     const texts = [
-      'React daveloper',
-      'AI/ML learner',
-      'Java davelopment',
+      'Full stack daveloper',
+      'Devops engineer',
+      'AI/ML Learner',
     ];
     let textIndex = 0;
     let charIndex = 0;

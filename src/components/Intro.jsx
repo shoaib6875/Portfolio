@@ -13,7 +13,7 @@ const Intro = ({ isDarkMode }) => {
         <div className={`text-xl md:text-2xl mb-8 h-8 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
           <span id="typing-text" className="typing-animation"></span>
         </div>
-        <p className={`text-lg md:text-xl mb-8 max-w-2xl mx-auto ${isDarkMode ? 'text-gray-200' : 'text-gray-800'} opacity-40 backdrop-blur-md ${isDarkMode ? 'bg-gray-900/70' : 'bg-white/70'} p-4 rounded-lg`}>
+        <p className={`text-lg md:text-xl mb-8 max-w-2xl mx-auto ${isDarkMode ? 'text-gray-200' : 'text-black'} opacity-40 backdrop-blur-md ${isDarkMode ? 'bg-gray-900/70' : 'bg-white/70'} p-4 rounded-lg`}>
           B.Tech IT student at MSIT Delhi, skilled in MERN, AI, and DevOps. Open to global remote opportunities to build and collaborate.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

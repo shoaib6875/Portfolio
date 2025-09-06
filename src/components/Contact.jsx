@@ -17,7 +17,7 @@ const Contact = ({ isDarkMode }) => {
               </div>
               <div>
                 <p className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Email</p>
-                <p className={`text-gray-600 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>shoaibakhtar14082002@gmail.com</p>
+                <p className={`text-gray-400 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>shoaibakhtar14082002@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center">
@@ -26,7 +26,7 @@ const Contact = ({ isDarkMode }) => {
               </div>
               <div>
                 <p className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Phone</p>
-                <p className={`text-gray-600 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>+91 9650184650</p>
+                <p className={`text-gray-400 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>+91 9650184650</p>
               </div>
             </div>
             <div className="flex items-center">
@@ -35,7 +35,7 @@ const Contact = ({ isDarkMode }) => {
               </div>
               <div>
                 <p className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Location</p>
-                <p className={`text-gray-600 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Delhi, India</p>
+                <p className={`text-gray-400 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Delhi, India</p>
               </div>
             </div>
           </div>
@@ -53,21 +53,30 @@ const Contact = ({ isDarkMode }) => {
         </div>
         <div className="fade-in">
           <form className="bg-white p-8 rounded-2xl shadow-lg">
-            <div className="mb-6">
-              <label className={`block ${isDarkMode ? 'text-white' : 'text-gray-700'} font-semibold mb-2`}>Name</label>
+
+             {/* <div className="mb-6">
+              <label className={`block ${isDarkMode ? 'text-red' : 'text-gray-700'} font-semibold mb-2`}>Name</label>
               <input type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Name" />
+            </div>  */}
+
+            <div className="mb-6">
+            <label className={`block ${isDarkMode ? 'text-red' : 'text-gray-700'} font-semibold mb-2`}>Name</label>
+            <input  type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black" placeholder="Your Name"  />
             </div>
+
+
+
             <div className="mb-6">
               <label className={`block ${isDarkMode ? 'text-white' : 'text-gray-700'} font-semibold mb-2`}>Email</label>
-              <input type="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your@email.com" />
+              <input type="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent  text-black" placeholder="your@email.com" />
             </div>
             <div className="mb-6">
               <label className={`block ${isDarkMode ? 'text-white' : 'text-gray-700'} font-semibold mb-2`}>Subject</label>
-              <input type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Project Discussion" />
+              <input type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent  text-black"  placeholder="Project Discussion" />
             </div>
             <div className="mb-6">
               <label className={`block ${isDarkMode ? 'text-white' : 'text-gray-700'} font-semibold mb-2`}>Message</label>
-              <textarea rows="4" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell me about your project..."></textarea>
+              <textarea rows="4" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent  text-black" placeholder="Tell me about your project..."></textarea>
             </div>
             <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
               Send Message

@@ -1,8 +1,7 @@
 import React from 'react';
-
 const Navbar = React.forwardRef(({ isMobileMenuOpen, setIsMobileMenuOpen, isDarkMode, setIsDarkMode }, ref) => {
   return (
-    <nav ref={ref} className={`fixed top-0 w-full z-50 ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-800'} shadow-md`}>
+    <nav ref={ref} className={`fixed top-0 w-full z-50 ${isDarkMode ? 'bg-rose-950 text-white' : 'bg-emerald-200 text-gray-800'} shadow-md`}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold bg-transparent text-inherit">
           <span className={`${isDarkMode ? 'text-white' : 'text-gray-800'} bg-transparent text-inherit`}>Shoaib Akhtar</span>
@@ -51,7 +50,7 @@ const Navbar = React.forwardRef(({ isMobileMenuOpen, setIsMobileMenuOpen, isDark
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
               className={`w-full text-left px-6 py-2 ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-800'} hover:bg-opacity-80 transition-colors`}
-            >
+                         >
               {/* <img src={isDarkMode ? '/mode1.png' : '/mode.png'} alt="Theme Toggle" className={`w-12 h-12 ${isDarkMode ? 'scale-150' : ''} inline-block`} /> */}
             </button>
           </div>
@@ -62,3 +61,4 @@ const Navbar = React.forwardRef(({ isMobileMenuOpen, setIsMobileMenuOpen, isDark
 });
 
 export default Navbar;
+

@@ -18,9 +18,9 @@ const Navbar = React.forwardRef(({ isMobileMenuOpen, setIsMobileMenuOpen, isDark
           <div className="md:flex hidden items-center">
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
-              className={`ml-2 p-0.5 rounded-full ${isDarkMode ? 'bg-gray-400' : 'bg-gray-700'} hover:bg-opacity-80 transition-colors`}
+              className={`ml-2 rounded-full ${isDarkMode ? 'bg-gray-400' : 'bg-gray-700'} hover:bg-opacity-80 transition-colors border-none`}
             >
-              <img src={isDarkMode ? `${import.meta.env.BASE_URL}mode1.png` : `${import.meta.env.BASE_URL}mode.png`} alt="Theme Toggle" className={`w-8 h-8 ${isDarkMode ? 'scale-150' : ''} rounded-full object-cover`} />
+              <img src={isDarkMode ? `${import.meta.env.BASE_URL}mode1.png` : `${import.meta.env.BASE_URL}mode.png`} alt="Theme Toggle" className="w-8 h-8 rounded-full object-cover border-none" />
             </button>
           </div>
           <div className="flex items-center md:hidden">
@@ -31,9 +31,9 @@ const Navbar = React.forwardRef(({ isMobileMenuOpen, setIsMobileMenuOpen, isDark
             </button>
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
-              className={`p-0.5 rounded-full ${isDarkMode ? 'bg-gray-400' : 'bg-gray-700'} hover:bg-opacity-80 transition-colors`}
+              className={`rounded-full ${isDarkMode ? 'bg-gray-400' : 'bg-gray-700'} hover:bg-opacity-80 transition-colors border-none`}
             >
-              <img src={isDarkMode ? `${import.meta.env.BASE_URL}mode1.png` : `${import.meta.env.BASE_URL}mode.png`} alt="Theme Toggle" className={`w-8 h-8 ${isDarkMode ? 'scale-150' : ''} rounded-full object-cover`} />
+              <img src={isDarkMode ? `${import.meta.env.BASE_URL}mode1.png` : `${import.meta.env.BASE_URL}mode.png`} alt="Theme Toggle" className="w-8 h-8 rounded-full object-cover border-none" />
             </button>
           </div>
         </div>

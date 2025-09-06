@@ -20,7 +20,7 @@ const Navbar = React.forwardRef(({ isMobileMenuOpen, setIsMobileMenuOpen, isDark
               onClick={() => setIsDarkMode(!isDarkMode)}
               className={`ml-2 p-0.5 rounded-full ${isDarkMode ? 'bg-gray-400' : 'bg-gray-700'} hover:bg-opacity-80 transition-colors`}
             >
-             <img src={isDarkMode ? `${import.meta.env.BASE_URL}mode1.png` : `${import.meta.env.BASE_URL}mode.png`} alt="Theme Toggle" className={`w-8 h-8 ${isDarkMode ? 'scale-150' : ''}`} />
+              <img src={isDarkMode ? `${import.meta.env.BASE_URL}mode1.png` : `${import.meta.env.BASE_URL}mode.png`} alt="Theme Toggle" className={`w-8 h-8 ${isDarkMode ? 'scale-150' : ''} rounded-full object-cover`} />
             </button>
           </div>
           <div className="flex items-center md:hidden">
@@ -33,7 +33,7 @@ const Navbar = React.forwardRef(({ isMobileMenuOpen, setIsMobileMenuOpen, isDark
               onClick={() => setIsDarkMode(!isDarkMode)}
               className={`p-0.5 rounded-full ${isDarkMode ? 'bg-gray-400' : 'bg-gray-700'} hover:bg-opacity-80 transition-colors`}
             >
-              <img src={isDarkMode ? `${import.meta.env.BASE_URL}mode1.png` : `${import.meta.env.BASE_URL}mode.png`} alt="Theme Toggle" className={`w-8 h-8 ${isDarkMode ? 'scale-150' : ''}`} />
+              <img src={isDarkMode ? `${import.meta.env.BASE_URL}mode1.png` : `${import.meta.env.BASE_URL}mode.png`} alt="Theme Toggle" className={`w-8 h-8 ${isDarkMode ? 'scale-150' : ''} rounded-full object-cover`} />
             </button>
           </div>
         </div>
@@ -50,7 +50,7 @@ const Navbar = React.forwardRef(({ isMobileMenuOpen, setIsMobileMenuOpen, isDark
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
               className={`w-full text-left px-6 py-2 ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-800'} hover:bg-opacity-80 transition-colors`}
-                         >
+            >
               {/* <img src={isDarkMode ? '/mode1.png' : '/mode.png'} alt="Theme Toggle" className={`w-12 h-12 ${isDarkMode ? 'scale-150' : ''} inline-block`} /> */}
             </button>
           </div>
@@ -61,4 +61,3 @@ const Navbar = React.forwardRef(({ isMobileMenuOpen, setIsMobileMenuOpen, isDark
 });
 
 export default Navbar;
-
